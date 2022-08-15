@@ -1,0 +1,238 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+/* general */
+.inicio{
+    height: 100vh;
+}
+
+
+
+/* mediaqueries - index*/
+
+@media screen and (min-width:400px){
+    .menu ul li{
+        background-color: rgb(30, 93, 210);
+        margin: 10px;
+        padding: 10px;
+        display:inline-flex;
+    
+    }
+    
+    .opciones{
+        display:flex;
+        justify-content: center;
+    }
+    
+    .menu{
+        background-color: rgb(80, 109, 255);
+        grid-area: menu;
+        height: 25%; 
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:390px){
+    .menu{
+        display: flex;
+        text-align: center;
+        justify-content:right;
+    }
+}
+
+
+
+
+/* index */
+
+.inicio{
+    background-image: url(/img/imagen-1.jpg);
+}
+
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+}
+
+/* index-grids*/
+
+.grid-1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
+    grid-template:
+    "menu menu menu" 
+    "principal-1 principal-1 principal-1"
+    "pie-de-pagina  pie-de-pagina pie-de-pagina"
+    ;
+}
+
+
+.pie-de-pagina{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: end;
+
+}
+
+.principal-1{
+    grid-area: principal-1;
+}
+
+.pie-de-pagina{
+    grid-area: pie-de-pagina;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+
+/* estilos del menu */
+.menu ul li{
+    background-color: rgb(30, 93, 210);
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+.menu{
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+/* tienda */
+.listaCompra1{
+    display: inline-block;
+    text-align: center;
+}
+
+.listaCompra2{
+    display: inline-block;
+    text-align: center;
+}
+
+.listaCompra3{
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+.estrellas{
+    max-height: 100px ;
+    max-width: 100px ;
+}
+
+.lupa{
+    max-height: 100px ;
+    max-width: 100px ;
+}
+
+
+
+/* contacto */
+
+.menu{
+    height: 8vh;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.info{
+    margin-top: 7%;
+    
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+/* contacto-grids*/
+.grid-2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 2fr 0.5fr ;
+    
+    grid-template:
+    "menu  " 
+    "principal-2"
+    "pie-de-pagina "
+    ;
+}
+
+
+/* mediaqueries - contacto*/
+
+@media screen and (max-width:400px){
+    .pie-de-pagina{
+        margin-top: 7%;
+        margin-bottom: 0;
+    }
+    
+    .mapa{
+        margin-top: 20%;
+    }
+
+}
+
+
+
+
+
+/* ayuda */
+
+.listaPreguntas1{
+    display: inline-block;
+    padding-left: 570px;
+    
+}
+
+.listaPreguntas2{
+    display: inline-block;
+    padding-left: 400px;
+   
+}
+
+.preguntas{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.listaPreguntas{
+    padding-top: 100px;
+}
+
+.preguntasFrecuentes{
+    text-align: center;
+}
