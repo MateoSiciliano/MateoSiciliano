@@ -160,6 +160,7 @@
 
 .listaPreguntas1{
     padding-left: 20%;
+    
 }
 
 .listaPreguntas2{
@@ -175,12 +176,3 @@
     max-height: 100%;
 }
 
-@media (max-width:400px){
-    .listaPreguntas1{
-        padding-left: 0;
-    }
-
-    .listaPreguntas2{
-        padding-right: 0;
-    }
-}
