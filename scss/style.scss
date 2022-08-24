@@ -1,2 +1,45 @@
-/* index*/
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.inicio-1{
+    background-image: url(/img/imagen-1.jpg);
+    height: 100vh;
+    /* index-grids*/
+    .grid-1{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+        grid-template-areas:
+        "menu menu menu" 
+        "principal-1 principal-1 principal-1"
+        "pie-de-pagina  pie-de-pagina pie-de-pagina"
+        ;
+        .menu{
+            grid-area: menu;
+        }
+        .pie-de-pagina{
+            grid-area: pie-de-pagina;
+            display: grid;
+            height: 100%;
+            justify-content: center;
+            align-content: end;
+        }
+        /* index */
+        .principal-1{
+            grid-area: principal-1;
+            .bienvenida{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
 
